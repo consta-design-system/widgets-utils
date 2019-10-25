@@ -1,0 +1,10 @@
+{
+  "extends": "@gaz/configs/tsconfig",
+  "compilerOptions": {
+    "declarationDir": "lib",
+    "outDir": "lib",
+    "sourceMap": false
+  },
+  "exclude": ["build", "__tests__", "wallaby.js"],
+  "include": ["src/*", "types/**/*"]
+}
