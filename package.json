@@ -50,8 +50,7 @@
   },
   "dependencies": {
     "@gaz/configs": "0.1.16",
-    "lodash": "4.17.11",
-    "pluralize-ru": "1.0.1"
+    "lodash": "4.17.11"
   },
   "devDependencies": {
     "@types/lodash": "4.14.135",
