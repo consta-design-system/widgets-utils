@@ -1,11 +1,25 @@
-import pluralize from 'pluralize-ru'
+const format = (phrase: string, count: string | number) => phrase.replace(/%d/g, String(count))
 
-const plural = (...args: any) => (count: number | string) => pluralize(count, ...args)
+export const pluralize = (one: string, two: string, more: string) => (count?: string | number) => {
+  if (!count || typeof count === 'string') {
+    return format(more, count ? count : '0')
+  }
 
-export const getDayPlural = plural('%d дней', '%d день', '%d дня', '%d дней')
+  if (count % 10 === 1 && count % 100 !== 11) {
+    return format(one, count)
+  }
 
-export const getHourPlural = plural('%d часов', '%d час', '%d часа', '%d часов')
+  if (count % 10 >= 2 && count % 10 <= 4 && (count % 100 < 10 || count % 100 >= 20)) {
+    return format(two, count)
+  }
 
-export const getFbPlural = plural('%d стволов', '%d ствол', '%d ствола', '%d стволов')
+  return format(more, count)
+}
 
-export const getStagePlural = plural('%d стадий', '%d стадия', '%d стадии', '%d стадий')
+export const getDayPlural = pluralize('%d день', '%d дня', '%d дней')
+
+export const getHourPlural = pluralize('%d час', '%d часа', '%d часов')
+
+export const getFbPlural = pluralize('%d ствол', '%d ствола', '%d стволов')
+
+export const getStagePlural = pluralize('%d стадия', '%d стадии', '%d стадий')
