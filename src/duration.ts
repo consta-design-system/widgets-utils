@@ -1,14 +1,19 @@
 import { createArrayOfIndexes } from './array'
 
-export const getMaxDurationSteps = (maxDuration: number): number =>
-  Math.max(
-    8,
-    maxDuration < 32
-      ? maxDuration
-      : maxDuration > 96
-      ? 32 - (maxDuration % 32)
-      : 16 - (maxDuration % 16)
-  )
+export const getMaxDurationSteps = (maxDuration: number): number => {
+  const steps = (() => {
+    switch (true) {
+      case maxDuration < 32:
+        return maxDuration
+      case maxDuration <= 96:
+        return 16 - (maxDuration % 16)
+      default:
+        return 32 - (maxDuration % 32)
+    }
+  })()
+
+  return Math.max(steps, 8)
+}
 
 export const getDurationsGrid = (data: readonly any[] | undefined, maxDuration: number) =>
   data && data.length
