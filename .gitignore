@@ -33,3 +33,7 @@ jspm_packages
 build
 dist
 lib
+
+# Yalc
+.yalc
+yalc.lock
