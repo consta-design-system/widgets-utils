@@ -1,0 +1,22 @@
+name: CI
+on:
+  push:
+    branches:
+      - master
+  pull_request:
+jobs:
+  build:
+    name: Install node modules and run tests
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+      - name: Use Node.js 10
+        uses: actions/setup-node@v1
+        with:
+          node-version: 10
+      - name: Install modules and test
+        run: |
+          npm install -g yarn npm-cli-login
+          npm-cli-login -u ${{ secrets.LOGIN }} -p ${{ secrets.PASSWORD }} -e tools@csssr.com -r https://nexus.csssr.space/repository/csssr -s @gaz
+          yarn --frozen-lockfile
+          yarn test
