@@ -1,14 +1,11 @@
 // Значение, которое никогда не меняется
 const CONSTANT_SIZE = 16
-// Значение, которое изменяется при ресайзе окна и используется для расчета всех размеров
-let baseSize: number
 
 export const updateBaseSize = (size: number, element: HTMLElement | SVGElement) => {
-  baseSize = size
   element.style.setProperty('--base-size', `${size}`)
 }
 
-export const getCalculatedSize = (size: number) => {
+export const getCalculatedSize = (size: number, baseSize: number) => {
   return Math.round((size / CONSTANT_SIZE) * baseSize)
 }
 
