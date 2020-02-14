@@ -1,5 +1,9 @@
 # Utils
 
+## Установка, обновление, публикация и подключение пакета
+
+Инструкции находятся в пакете [gpn-configs](https://github.com/CSSSR/gaz-configs)
+
 ## Зависимости
 - NodeJS >= 10
 - Yarn >= 1.16
@@ -28,14 +32,6 @@ $ yarn run format
 # Запуск тестов
 $ yarn test
 ```
-
-Для публикации пакетов авторизуемся из личной директории (из директории проекта не получится) здесь:
-
-```
-npm login --registry=https://nexus.csssr.space/repository/csssr/
-```
-
-С логином `npm` и паролем `hunger-respire-really-payoff-molder`
 
 ### Методы
 

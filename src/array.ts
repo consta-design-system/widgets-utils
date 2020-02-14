@@ -2,7 +2,7 @@ import { concat } from 'lodash'
 
 import { getRandomInt } from './number'
 
-export function stringArrayToObjectMap<T extends string>(arr: ReadonlyArray<T>) {
+export function stringArrayToObjectMap<T extends string>(arr: readonly T[]) {
   return arr.reduce(
     (map, item) => ({
       ...map,

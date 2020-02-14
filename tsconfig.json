@@ -1,5 +1,5 @@
 {
-  "extends": "@gaz/configs/tsconfig",
+  "extends": "@csssr/gpn-configs/tsconfig",
   "compilerOptions": {
     "declarationDir": "lib",
     "outDir": "lib",
