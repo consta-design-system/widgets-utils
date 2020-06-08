@@ -5,8 +5,8 @@
 Инструкции находятся в пакете [gpn-configs](https://github.com/CSSSR/gaz-configs)
 
 ## Зависимости
-- NodeJS >= 10
-- Yarn >= 1.16
+- NodeJS >= 13
+- Yarn >= 1.19
 
 ## Установка зависимостей
 
