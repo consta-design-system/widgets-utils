@@ -1,6 +1,6 @@
 {
   "name": "@consta/widgets-utils",
-  "version": "0.2.13",
+  "version": "0.2.14-0",
   "files": [
     "lib"
   ],
@@ -26,8 +26,6 @@
   "keywords": [
     "utils"
   ],
-  "author": "CSSSR",
-  "license": "ISC",
   "bugs": {
     "url": "https://github.com/gazprom-neft/consta-widgets-utils/issues"
   },
