@@ -18,7 +18,7 @@ jobs:
     - name: Create and publish release
       uses: ncipollo/release-action@v1
       with:
-        tag: v0.2.13
+        tag: v0.2.14-0
         bodyFile: 'TEMP_CHANGELOG.md'
         token: ${{ secrets.GITHUB_TOKEN }}
     - name: Use Node.js 12
