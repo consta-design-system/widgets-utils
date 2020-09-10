@@ -10,16 +10,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v1
-      - name: Use Node.js 13
+      - name: Use Node.js 12
         uses: actions/setup-node@v1
         with:
-          node-version: 13
-          registry-url: 'https://npm.pkg.github.com'
+          node-version: 12
       - name: Install modules and test
         run: |
           yarn policies set-version 1.19.1
           yarn
           yarn test
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_GITHUB_REGISTRY_TOKEN }}
-

@@ -1,5 +1,5 @@
 module.exports = {
   extends: [
-    require.resolve('@csssr/gpn-configs/eslintrc'),
+    require.resolve('@consta/widgets-configs/eslintrc'),
   ]
 }

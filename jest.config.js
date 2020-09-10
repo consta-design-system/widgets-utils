@@ -1,4 +1,4 @@
 module.exports = {
-  ...require('@csssr/gpn-configs/jest.config.js'),
+  ...require('@consta/widgets-configs/jest.config.js'),
   setupFilesAfterEnv: [],
 }

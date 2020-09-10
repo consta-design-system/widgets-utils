@@ -1,11 +1,13 @@
 # Utils
 
+NPM: https://www.npmjs.com/package/@consta/widgets-configs
+
 ## Установка, обновление, публикация и подключение пакета
 
-Инструкции находятся в пакете [gpn-configs](https://github.com/CSSSR/gaz-configs)
+Инструкции находятся в пакете [consta-widgets-configs](https://github.com/gazprom-neft/consta-widgets-configs)
 
 ## Зависимости
-- NodeJS >= 13
+- NodeJS = 12.x
 - Yarn >= 1.19
 
 ## Установка зависимостей
