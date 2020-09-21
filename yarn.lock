@@ -1675,10 +1675,10 @@
     exec-sh "^0.3.2"
     minimist "^1.2.0"
 
-"@consta/widgets-configs@1.1.2-0":
-  version "1.1.2-0"
-  resolved "https://registry.yarnpkg.com/@consta/widgets-configs/-/widgets-configs-1.1.2-0.tgz#85ee35dd53d067f02ef45e59e1358f82ca0e3089"
-  integrity sha512-Unc0lUFEgCDCsr9tGNn1YsipjGZz+Cc//JUWCdcu/PgIhzaa7D6M1cex5nwX/lHy3XQhpK3WOHuBGdq1HK7kjQ==
+"@consta/widgets-configs@1.1.2":
+  version "1.1.2"
+  resolved "https://registry.yarnpkg.com/@consta/widgets-configs/-/widgets-configs-1.1.2.tgz#c22d09c138489101915acb558f2dfb3521e9a38d"
+  integrity sha512-A7lbBXhkwEXxuPP51kc0taROQEplTHK5XpuVTdhJrJljbyNgRxMT3tZApYkgwuCRg+E38Th+vzfYyFKkpfYcTw==
   dependencies:
     "@babel/core" "7.4.5"
     "@babel/plugin-proposal-class-properties" "7.4.4"
