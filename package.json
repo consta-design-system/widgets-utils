@@ -1,6 +1,6 @@
 {
   "name": "@consta/widgets-utils",
-  "version": "0.2.14-0",
+  "version": "0.2.14",
   "files": [
     "lib"
   ],
