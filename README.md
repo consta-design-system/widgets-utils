@@ -1,6 +1,6 @@
 # Utils
 
-NPM: https://www.npmjs.com/package/@consta/widgets-configs
+NPM: https://www.npmjs.com/package/@consta/widgets-utils
 
 ## Установка, обновление, публикация и подключение пакета
 
