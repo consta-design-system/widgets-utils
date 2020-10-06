@@ -1,1 +1,1 @@
-export const partialObject = <T extends object>(obj?: T): Partial<T> => obj || {}
+export const partialObject = <T extends Record<string, unknown>>(obj?: T): Partial<T> => obj || {}
