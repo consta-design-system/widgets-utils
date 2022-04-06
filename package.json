@@ -1,6 +1,6 @@
 {
   "name": "@consta/widgets-utils",
-  "version": "0.2.14",
+  "version": "0.2.15",
   "files": [
     "lib"
   ],
@@ -50,16 +50,12 @@
     ]
   },
   "devDependencies": {
-    "@consta/widgets-configs": "1.4.0",
+    "@consta/widgets-configs": "1.5.1",
     "@types/lodash": "4.14.135",
     "lodash": "4.17.11",
     "npm-run-all": "4.1.5"
   },
   "peerDependencies": {
     "lodash": "^4.17.11"
-  },
-  "engines": {
-    "node": "12.x",
-    "yarn": ">=1.19.1"
   }
 }
